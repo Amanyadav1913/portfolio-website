@@ -12,8 +12,8 @@ const projects = [
     description:
       "Responsive personal portfolio built using React, Tailwind CSS and Framer Motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/yourusername/project1",
-    live: "https://yourproject1.vercel.app",
+    github: "https://github.com/Amanyadav1913/portfolio-website",
+    live: "https://amanyadav1913.github.io/portfolio-website/",
   },
   {
     title: "Weather App",
@@ -36,8 +36,8 @@ const projects = [
     description:
       "Modern calculator using JavaScript with smooth animations.",
     tech: ["HTML", "CSS", "JS"],
-    github: "https://github.com/yourusername/project4",
-    live: "https://yourproject4.vercel.app",
+    github: "https://github.com/Amanyadav1913/calculator",
+    live: "https://amanyadav1913.github.io/calculator/",
   },
 ];
 
