@@ -62,7 +62,7 @@ export default function Documents() {
         <motion.div
           animate={{
             y: [10, -30, -25],
-            rotate: [00, 10, 10],
+            rotate: [10, 10, 10],
           }}
           transition={{
             duration: 7,

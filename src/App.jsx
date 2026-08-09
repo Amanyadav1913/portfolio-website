@@ -6,7 +6,6 @@ import Home from "./pages/Home"
 import Documents from "./pages/Documents"
 import Project from "./components/Project"
 import Contact from "./components/Contact"
-// popUp design 
  
 
 
