@@ -166,7 +166,7 @@ export default function Skills() {
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y:0 }}
               viewport={{ once: true }}
               transition={{
                 duration: .5,
