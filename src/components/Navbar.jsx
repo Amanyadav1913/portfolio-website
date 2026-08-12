@@ -27,6 +27,8 @@ const Navbar = () => {
       >
         <div className="px-5 sm:px-7 lg:px-8">
 
+          <h1>my portfolio 123</h1>
+
           {/* Main Navbar */}
 
           <div className="h-16 sm:h-20 flex items-center justify-between">
