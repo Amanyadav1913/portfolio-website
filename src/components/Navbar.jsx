@@ -14,27 +14,23 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 pt-4">
+    <header className="fixed top-0 left-0 w-full z-40 px-4 sm:px-6 pt-2">
       <nav
         className="
           max-w-7xl mx-auto
-          rounded-4xl
+          rounded-3xl
           border border-cyan-400/20
           bg-black/30
           backdrop-blur-xl
           shadow-[0_0_30px_rgba(34,211,238,0.08)]
         "
       >
-        <div className="px-5 sm:px-7 lg:px-8">
-
-          <h1>my portfolio 123</h1>
+        <div className="px-3 sm:px-4 lg:px-6">
 
           {/* Main Navbar */}
-
-          <div className="h-16 sm:h-20 flex items-center justify-between">
+          <div className="h-14 sm:h-16 flex items-center justify-between">
 
             {/* Logo */}
-
             <NavLink
               to="/"
               onClick={() => setIsOpen(false)}
@@ -66,7 +62,6 @@ const Navbar = () => {
             </NavLink>
 
             {/* Desktop Navigation */}
-
             <div className="hidden md:flex items-center gap-6 lg:gap-8">
               {navItems.map((item) => (
                 <NavLink
@@ -87,7 +82,7 @@ const Navbar = () => {
 
                     after:absolute
                     after:left-0
-                    after:-bottom-1
+                    after:-bottom-2
                     after:h-[2px]
                     after:w-0
                     after:bg-cyan-400
@@ -95,6 +90,12 @@ const Navbar = () => {
                     after:transition-all
                     after:duration-300
                     hover:after:w-full
+
+                    ${
+                      isActive
+                        ? "after:w-full"
+                        : ""
+                    }
                     `
                   }
                 >
@@ -104,7 +105,6 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="
@@ -132,6 +132,7 @@ const Navbar = () => {
               md:hidden
               overflow-hidden
               transition-all duration-500
+
               ${
                 isOpen
                   ? "max-h-96 opacity-100 pb-5"
