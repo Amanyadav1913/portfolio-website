@@ -99,27 +99,58 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: .8 }}
           className="mt-10 flex justify-center"
-        >
-          <Link to="/documents">
-            <button
-              className="
-              px-8
-              py-4
-              rounded-full
-              bg-gradient-to-r
-              from-cyan-500
-              to-blue-600
-              text-white
-              font-semibold
-              shadow-lg
-              shadow-cyan-500/30
-              hover:scale-105
-              duration-300
-              hover:shadow-cyan-400/50"
-            >
-              📄 View Documents
-            </button>
-          </Link>
+        > 
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+
+  {/* Documents Button */}
+  <Link to="/documents" className="w-full sm:w-auto">
+    <button
+      className="
+        w-full sm:w-48
+        h-14
+        rounded-full
+        bg-gradient-to-r
+        from-cyan-500
+        to-blue-600
+        text-white
+        font-semibold
+        shadow-lg
+        shadow-cyan-500/30
+        hover:scale-105
+        transition-all
+        duration-300
+        hover:shadow-cyan-400/50
+      "
+    >
+      📄 View Documents
+    </button>
+  </Link>
+
+  {/* Achievements Button */}
+  <Link to="/achievements" className="w-full sm:w-auto">
+    <button
+      className="
+        w-full sm:w-48
+        h-14
+        rounded-full
+        bg-gradient-to-r
+        from-cyan-500
+        to-blue-600
+        text-white
+        font-semibold
+        shadow-lg
+        shadow-cyan-500/30
+        hover:scale-105
+        transition-all
+        duration-300
+        hover:shadow-cyan-400/50
+      "
+    >
+      🏆 Achievements
+    </button>
+  </Link>
+
+</div>
         </motion.div>
 
       </div>

@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Documents from "./pages/Documents"
 import Project from "./components/Project"
 import Contact from "./components/Contact"
+import Achievements from "./components/Achievements"
  
 
 
@@ -16,6 +17,7 @@ function App() {
        <Routes>
         <Route path ="/" element ={<Home/>}/> 
          <Route path="/documents" element={<Documents/>}/>
+         <Route path="/achievements" element={<Achievements/>}/>
         <Route path ="/About" element ={<About/>}/>
         <Route path ="/Skills" element ={<Skills/>}/>
         <Route path ="/Project" element ={<Project/>}/>
